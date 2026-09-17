@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>APP Assignment</title>
+	<link rel="stylesheet" href="static/w3.css">
+	<link rel="stylesheet" href="static/w3-deep-purple-theme.css">
+ <div id ="box1">
+ <h1 id= "Quotes4You"> <b> Quotes4You </b> </h1>
+<img src="https://kundalinihouse.com.au/wp-content/uploads/2015/09/ocean-banner.jpg" style="height: 800px; width: 1930px;"  >
+ </div>
+
+ <div id ="HeaderBox">
+ </div>
+ 
+</head>
+
+<body>
+ 
+  <!--navigation bars-->
+  <div id="BodyDiv">
+  <button id= "QuotesGallery" onclick="QuotesGallery2()"> <b> Quote Delection/Review </b> </button>
+  <button id= "AdditionToQuotes" onclick="showMyQuotes2()"> <b> Add Your Own Quote </b> </button>
+    <p id="demo"></p>
+  <button onclick="showMyQuotes()" id= "NewQuote"> <b> My Quotes </b> </button>
+  </div>
+
+  
+ <div class="container">
+  <input type="text" placeholder= "Search For Quotes"></input>
+   <a href="">
+     <li class="fas fa-search"></li>
+   </a>
+</div>
+
+<div id="container">
+  <button id="RandomQuote">Press For Random Quote</button>
+  <div id="output">The best Quote is in the Beholders Eyes - Quotes4You</div>
+</div>
+
+
+  
+    <!-- Journal Section -->
+  <div onclick=""id="OnAndOffDisplay">
+  <div id="showingQuote">
+        <h2 id="quoteDisplay">All of Quote Entries</h2>
+        <div>
+            <ol id="QuoteEntries">
+              <li>item1</li>
+              <li>item2</li>
+            </ol>
+        </div>
+        <div>
+            <button id="uploadQuote">upload journal</button>
+        </div>
+    </div>
+        <div id="QuoteItem" >
+          <h3>Quote Entry</h3>
+            <div>
+                <div><label for="idGenerator">ID: </label>
+                <input type="text" id="idGenerator" style="width:60%; height:20px; cursive;border:5px double black;"  disabled></div>
+                <div><label  for="automatedDate">Date: </label>
+                <input type="text" id="automatedDate" style="width:60%; height:20px; cursive;border:5px double black;" disabled></div>
+                <label for="authorNameAdd">Name: </label>
+                <div><input type="text" id="authorNameAdd" style="width:60%; height:20px; cursive;border:5px double black;" disabled></div>
+                <label for="txtNote">Notes: </label>
+                <textarea id="txtNote" name="txtNote" rows="3" cols="40" style="width:60%; height:35px; cursive;border:5px double black;" disabled></textarea>
+              <div>
+          <div> <button id="deleteQuote">Delete Quote</button></div>
+        </div>
+            
+        </div>
+        </div>
+       
+    
+  </div>
+   <div id="quoteJournal" >
+            <h1 id = "h2addQuote">Add your Own Quote</h1>
+            <div>
+                <div><label for="idGenerator">ID:</label>
+                <input type="text" id="automatedID" value="auto generated - ignore" disabled required></div>
+                <div><label for="automatedDate">Date: </label>
+                <input type="text" id="automatedDate1" value="auto generated - ignore" disabled  required></div>
+                <div><label for="authorNameAdd2">Name: </label>
+                <input type="text" id="authorNameAdd2" style="width:40%; height:20px; cursive;border:5px double black;" required></div>
+                <label for="txtEntry">Notes: </label>
+            <textarea id="txtAdd" name="txtAdd" rows="4" cols="50" style="width:60%; height:35px; cursive;border:5px double black;" required ></textarea>
+         <div>
+            <button id="addQuote">Add Quote</button>
+        </div>
+            </div>
+       
+    </div>
+
+<script src="static/scripts/app.js"></script>
+</body>
+</html>
